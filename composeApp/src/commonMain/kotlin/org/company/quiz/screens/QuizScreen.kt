@@ -50,10 +50,7 @@ class QuizScreen : Screen {
                     when (currentQuestion) {
                         is SingleAnswerQuestion -> SingleAnswerComponent(answerClick)
                         is YesNoQuestion -> YesNoComponent(answerClick)
-                        is MultipleChoiceQuestion -> MultipleChoiceComponent(
-                            (currentQuestion as MultipleChoiceQuestion).options,
-                            answerClick,
-                        )
+                        is MultipleChoiceQuestion -> MultipleChoiceComponent((currentQuestion as MultipleChoiceQuestion).options, answerClick)
                     }
                 }
             }
