@@ -1,6 +1,6 @@
 name: Test -> Production Build -> Deploy
 
-on:[workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   test-and-build-and-deploy:
